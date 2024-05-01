@@ -1,0 +1,7 @@
+-- Query used in Tableau for creating a month-based filter
+for time-based graphs using discrete data in Tableau --
+
+-- I did not need to use this filter for my visualizations,
+but I tested it in Tableau and found it quite useful --
+
+IF MONTH([Arrest Date]) >= 1 AND MONTH([Arrest Date]) <= 12 THEN [Arrest Date] END

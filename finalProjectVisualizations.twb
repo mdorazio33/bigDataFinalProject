@@ -1,0 +1,2514 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0308.0326                               -->
+<workbook original-version='18.1' source-build='2024.1.1 (20241.24.0308.0326)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='VirtualCollection (VirtualDatabase)' inline='true' name='federated.1hw9kax0bk545i15hnjo80zekp9z' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='(2)' name='mongodb_jdbc.0u5j9le1xlw5aj0zubtok01vglmt'>
+            <connection authentication='auth-user-pass' class='mongodb_jdbc' dbname='VirtualDatabase' one-time-sql='' username='doraziom6' v-log-directory='' v-logdir-option='' v-loglevel='INFO' v-mongodb-uri='mongodb://federateddatabaseinstance-jtjkl.a.query.mongodb.net/VirtualDatabase?ssl=true&amp;authSource=admin' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='mongodb_jdbc.0u5j9le1xlw5aj0zubtok01vglmt' name='VirtualCollection' table='[VirtualCollection]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='mongodb_jdbc.0u5j9le1xlw5aj0zubtok01vglmt' name='VirtualCollection' table='[VirtualCollection]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>_id</remote-name>
+            <remote-type>1</remote-type>
+            <local-name>[_id]</local-name>
+            <parent-name>[VirtualCollection]</parent-name>
+            <remote-alias>_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VirtualCollection_7996DF0F0B0C443AB1454C38B72A9B24]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ageGroup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ageGroup]</local-name>
+            <parent-name>[VirtualCollection]</parent-name>
+            <remote-alias>ageGroup</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VirtualCollection_7996DF0F0B0C443AB1454C38B72A9B24]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrestBoro</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[arrestBoro]</local-name>
+            <parent-name>[VirtualCollection]</parent-name>
+            <remote-alias>arrestBoro</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VirtualCollection_7996DF0F0B0C443AB1454C38B72A9B24]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrestDate</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[arrestDate]</local-name>
+            <parent-name>[VirtualCollection]</parent-name>
+            <remote-alias>arrestDate</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VirtualCollection_7996DF0F0B0C443AB1454C38B72A9B24]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrestDay</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[arrestDay]</local-name>
+            <parent-name>[VirtualCollection]</parent-name>
+            <remote-alias>arrestDay</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VirtualCollection_7996DF0F0B0C443AB1454C38B72A9B24]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrestKey</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[arrestKey]</local-name>
+            <parent-name>[VirtualCollection]</parent-name>
+            <remote-alias>arrestKey</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VirtualCollection_7996DF0F0B0C443AB1454C38B72A9B24]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrestMonth</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[arrestMonth]</local-name>
+            <parent-name>[VirtualCollection]</parent-name>
+            <remote-alias>arrestMonth</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VirtualCollection_7996DF0F0B0C443AB1454C38B72A9B24]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrestPrecinct</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[arrestPrecinct]</local-name>
+            <parent-name>[VirtualCollection]</parent-name>
+            <remote-alias>arrestPrecinct</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VirtualCollection_7996DF0F0B0C443AB1454C38B72A9B24]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrestYear</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[arrestYear]</local-name>
+            <parent-name>[VirtualCollection]</parent-name>
+            <remote-alias>arrestYear</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VirtualCollection_7996DF0F0B0C443AB1454C38B72A9B24]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geoReference</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[geoReference]</local-name>
+            <parent-name>[VirtualCollection]</parent-name>
+            <remote-alias>geoReference</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VirtualCollection_7996DF0F0B0C443AB1454C38B72A9B24]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>jurisdictionCd</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[jurisdictionCd]</local-name>
+            <parent-name>[VirtualCollection]</parent-name>
+            <remote-alias>jurisdictionCd</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VirtualCollection_7996DF0F0B0C443AB1454C38B72A9B24]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kyCd</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[kyCd]</local-name>
+            <parent-name>[VirtualCollection]</parent-name>
+            <remote-alias>kyCd</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VirtualCollection_7996DF0F0B0C443AB1454C38B72A9B24]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[VirtualCollection]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VirtualCollection_7996DF0F0B0C443AB1454C38B72A9B24]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lawCatCd</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lawCatCd]</local-name>
+            <parent-name>[VirtualCollection]</parent-name>
+            <remote-alias>lawCatCd</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VirtualCollection_7996DF0F0B0C443AB1454C38B72A9B24]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lawCd</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lawCd]</local-name>
+            <parent-name>[VirtualCollection]</parent-name>
+            <remote-alias>lawCd</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VirtualCollection_7996DF0F0B0C443AB1454C38B72A9B24]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[VirtualCollection]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VirtualCollection_7996DF0F0B0C443AB1454C38B72A9B24]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offenseDesc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[offenseDesc]</local-name>
+            <parent-name>[VirtualCollection]</parent-name>
+            <remote-alias>offenseDesc</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VirtualCollection_7996DF0F0B0C443AB1454C38B72A9B24]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pdCd</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[pdCd]</local-name>
+            <parent-name>[VirtualCollection]</parent-name>
+            <remote-alias>pdCd</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VirtualCollection_7996DF0F0B0C443AB1454C38B72A9B24]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pdDesc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pdDesc]</local-name>
+            <parent-name>[VirtualCollection]</parent-name>
+            <remote-alias>pdDesc</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VirtualCollection_7996DF0F0B0C443AB1454C38B72A9B24]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>perpRace</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[perpRace]</local-name>
+            <parent-name>[VirtualCollection]</parent-name>
+            <remote-alias>perpRace</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VirtualCollection_7996DF0F0B0C443AB1454C38B72A9B24]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>perpSex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[perpSex]</local-name>
+            <parent-name>[VirtualCollection]</parent-name>
+            <remote-alias>perpSex</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VirtualCollection_7996DF0F0B0C443AB1454C38B72A9B24]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>xCoordCd</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[xCoordCd]</local-name>
+            <parent-name>[VirtualCollection]</parent-name>
+            <remote-alias>xCoordCd</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VirtualCollection_7996DF0F0B0C443AB1454C38B72A9B24]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>yCoordCd</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[yCoordCd]</local-name>
+            <parent-name>[VirtualCollection]</parent-name>
+            <remote-alias>yCoordCd</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VirtualCollection_7996DF0F0B0C443AB1454C38B72A9B24]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]&quot;' value='Total Arrests' />
+          <alias key='&quot;[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestPrecinct:qk]&quot;' value='Precincts' />
+          <alias key='&quot;[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:jurisdictionCd:qk]&quot;' value='Jurisdictions' />
+          <alias key='&quot;[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:pdCd:qk]&quot;' value='Police Departments' />
+        </aliases>
+      </column>
+      <column datatype='real' default-format='p0.00%' name='[Calculation1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([arrestKey]) / TOTAL(COUNTD([arrestKey]))'>
+          <table-calc ordering-field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestBoro:nk]' ordering-type='Field' />
+        </calculation>
+      </column>
+      <column caption='Above Avg. Arrests' datatype='boolean' name='[Calculation_1666331870441832449]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='COUNTD([arrestKey])&gt;=WINDOW_AVG(COUNTD([arrestKey]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='X-Axis Label' datatype='integer' name='[Calculation_937593156871557130]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MONTH([arrestDate])' />
+      </column>
+      <column caption='MonthLabel' datatype='string' name='[Calculation_937593156874596363]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Month&quot;' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='VirtualCollection' datatype='table' name='[__tableau_internal_object_id__].[VirtualCollection_7996DF0F0B0C443AB1454C38B72A9B24]' role='measure' type='quantitative' />
+      <column caption='_Id' datatype='string' name='[_id]' role='dimension' type='nominal' />
+      <column caption='Age Group' datatype='string' name='[ageGroup]' role='dimension' type='nominal' />
+      <column caption='Arrest Boro' datatype='string' name='[arrestBoro]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;B&quot;' value='Bronx' />
+          <alias key='&quot;K&quot;' value='Brooklyn' />
+          <alias key='&quot;M&quot;' value='Manhatten' />
+          <alias key='&quot;Q&quot;' value='Queens' />
+          <alias key='&quot;S&quot;' value='Staten Island' />
+        </aliases>
+      </column>
+      <column caption='Arrest Date' datatype='datetime' name='[arrestDate]' role='dimension' type='ordinal' />
+      <column caption='Arrest Day' datatype='integer' name='[arrestDay]' role='dimension' type='quantitative' />
+      <column caption='Arrest Key' datatype='integer' name='[arrestKey]' role='dimension' type='ordinal' />
+      <column caption='Arrest Month' datatype='integer' name='[arrestMonth]' role='dimension' type='quantitative' />
+      <column caption='Arrest Precinct' datatype='integer' name='[arrestPrecinct]' role='measure' type='quantitative' />
+      <column caption='Arrest Year' datatype='integer' name='[arrestYear]' role='dimension' type='quantitative' />
+      <column caption='Geo Reference' datatype='string' name='[geoReference]' role='dimension' type='nominal' />
+      <column caption='Jurisdiction Cd' datatype='integer' name='[jurisdictionCd]' role='measure' type='quantitative' />
+      <column caption='Ky Cd' datatype='integer' name='[kyCd]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Law Cat Cd' datatype='string' name='[lawCatCd]' role='dimension' type='nominal' />
+      <column caption='Law Cd' datatype='string' name='[lawCd]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Offense Desc' datatype='string' name='[offenseDesc]' role='dimension' type='nominal' />
+      <column caption='Pd Cd' datatype='integer' name='[pdCd]' role='measure' type='quantitative' />
+      <column caption='Pd Desc' datatype='string' name='[pdDesc]' role='dimension' type='nominal' />
+      <column caption='Perp Race' datatype='string' name='[perpRace]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;AMERICAN INDIAN/ALASKAN NATIVE&quot;' value='American Indian/Ak Native' />
+          <alias key='&quot;ASIAN / PACIFIC ISLANDER&quot;' value='Asian/Pacific Islander' />
+          <alias key='&quot;BLACK&quot;' value='Black' />
+          <alias key='&quot;BLACK HISPANIC&quot;' value='Black-Hispanic' />
+          <alias key='&quot;UNKNOWN&quot;' value='Unknown' />
+          <alias key='&quot;WHITE&quot;' value='White' />
+          <alias key='&quot;WHITE HISPANIC&quot;' value='White-Hispanic' />
+        </aliases>
+      </column>
+      <column caption='Perp Sex' datatype='string' name='[perpSex]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;F&quot;' value='Female' />
+          <alias key='&quot;M&quot;' value='Male' />
+        </aliases>
+      </column>
+      <column caption='X Coord Cd' datatype='integer' name='[xCoordCd]' role='measure' type='quantitative' />
+      <column caption='Y Coord Cd' datatype='integer' name='[yCoordCd]' role='measure' type='quantitative' />
+      <column-instance column='[arrestKey]' derivation='CountD' name='[ctd:arrestKey:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[arrestPrecinct]' derivation='CountD' name='[ctd:arrestPrecinct:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[jurisdictionCd]' derivation='CountD' name='[ctd:jurisdictionCd:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[pdCd]' derivation='CountD' name='[ctd:pdCd:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[arrestDate]' derivation='Month' name='[mn:arrestDate:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[ageGroup]' derivation='None' name='[none:ageGroup:nk]' pivot='key' type='nominal' />
+      <column-instance column='[arrestBoro]' derivation='None' name='[none:arrestBoro:nk]' pivot='key' type='nominal' />
+      <column-instance column='[lawCatCd]' derivation='None' name='[none:lawCatCd:nk]' pivot='key' type='nominal' />
+      <column-instance column='[perpRace]' derivation='None' name='[none:perpRace:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_1666331870441832449]' derivation='User' name='[usr:Calculation_1666331870441832449:nk:1]' pivot='key' type='nominal'>
+        <table-calc ordering-type='Columns' />
+      </column-instance>
+      <group caption='Action (Age Group)' hidden='true' name='[Action (Age Group)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[ageGroup]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Arrest Boro)' hidden='true' name='[Action (Arrest Boro)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[arrestBoro]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (MONTH(Arrest Date))' hidden='true' name='[Action (MONTH(Arrest Date))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[mn:arrestDate:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Perp Race)' hidden='true' name='[Action (Perp Race)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[perpRace]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Perp Race,Perp Sex)' hidden='true' name='[Action (Perp Race,Perp Sex)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[perpRace]' />
+          <groupfilter function='level-members' level='[perpSex]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='10000' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:lawCatCd:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;I&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;V&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;(null)&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;9&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[usr:Calculation_1666331870441832449:nk:1]' type='palette'>
+            <map to='#5fbb68'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:perpRace:nk]' palette='jewel_bright_10_0' type='palette'>
+            <map to='#17becf'>
+              <bucket>&quot;WHITE&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;UNKNOWN&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;WHITE HISPANIC&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;AMERICAN INDIAN/ALASKAN NATIVE&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;BLACK&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;BLACK HISPANIC&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;ASIAN / PACIFIC ISLANDER&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:arrestBoro:nk]' palette='jewel_bright_10_0' type='palette'>
+            <map to='#4ee5ea'>
+              <bucket>&quot;Q&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;S&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;B&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;K&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:ageGroup:nk]' palette='jewel_bright_10_0' type='palette'>
+            <map to='#4ee5ea'>
+              <bucket>&quot;25-44&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;45-64&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;65+&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;18-24&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;&lt;18&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='VirtualCollection' id='VirtualCollection_7996DF0F0B0C443AB1454C38B72A9B24'>
+            <properties context=''>
+              <relation connection='mongodb_jdbc.0u5j9le1xlw5aj0zubtok01vglmt' name='VirtualCollection' table='[VirtualCollection]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_AD9830421E8641E3935811E0F577E1EF]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard' type='sheet' worksheet='Arrests by Race and Sex' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_C4715D3BC5AC42F29317C773DB5D2582]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard' type='sheet' worksheet='Arrests by Age Group' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_19C04564355E498C87A498E34152C405]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard' type='sheet' worksheet='Arrests by Borough' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Arrests by Age Group'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000'>Arrests by Age Group</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='VirtualCollection (VirtualDatabase)' name='federated.1hw9kax0bk545i15hnjo80zekp9z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hw9kax0bk545i15hnjo80zekp9z'>
+            <column caption='&quot;Age Group&quot;' datatype='string' name='[Calculation_937593156888641554]' role='dimension' type='nominal' user:unnamed='Arrests by Age Group'>
+              <calculation class='tableau' formula='&quot;Age Group&quot;' />
+            </column>
+            <column caption='Age Group' datatype='string' name='[ageGroup]' role='dimension' type='nominal' />
+            <column caption='Arrest Boro' datatype='string' name='[arrestBoro]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;B&quot;' value='Bronx' />
+                <alias key='&quot;K&quot;' value='Brooklyn' />
+                <alias key='&quot;M&quot;' value='Manhatten' />
+                <alias key='&quot;Q&quot;' value='Queens' />
+                <alias key='&quot;S&quot;' value='Staten Island' />
+              </aliases>
+            </column>
+            <column caption='Arrest Key' datatype='integer' name='[arrestKey]' role='dimension' type='ordinal' />
+            <column-instance column='[arrestKey]' derivation='CountD' name='[ctd:arrestKey:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_937593156888641554]' derivation='None' name='[none:Calculation_937593156888641554:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ageGroup]' derivation='None' name='[none:ageGroup:nk]' pivot='key' type='nominal' />
+            <column caption='Perp Race' datatype='string' name='[perpRace]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;AMERICAN INDIAN/ALASKAN NATIVE&quot;' value='American Indian/Ak Native' />
+                <alias key='&quot;ASIAN / PACIFIC ISLANDER&quot;' value='Asian/Pacific Islander' />
+                <alias key='&quot;BLACK&quot;' value='Black' />
+                <alias key='&quot;BLACK HISPANIC&quot;' value='Black-Hispanic' />
+                <alias key='&quot;UNKNOWN&quot;' value='Unknown' />
+                <alias key='&quot;WHITE&quot;' value='White' />
+                <alias key='&quot;WHITE HISPANIC&quot;' value='White-Hispanic' />
+              </aliases>
+            </column>
+            <column caption='Perp Sex' datatype='string' name='[perpSex]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;F&quot;' value='Female' />
+                <alias key='&quot;M&quot;' value='Male' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[Action (Arrest Boro)]'>
+            <groupfilter function='level-members' level='[arrestBoro]' user:ui-action-filter='[Action3_19C04564355E498C87A498E34152C405]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[Action (Perp Race)]'>
+            <groupfilter function='level-members' level='[perpRace]' user:ui-action-filter='[Action1_AD9830421E8641E3935811E0F577E1EF]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[Action (Perp Race,Perp Sex)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_AD9830421E8641E3935811E0F577E1EF]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[perpRace]' />
+              <groupfilter function='level-members' level='[perpSex]' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:ageGroup:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1hw9kax0bk545i15hnjo80zekp9z].[Action (Perp Race)]</column>
+            <column>[federated.1hw9kax0bk545i15hnjo80zekp9z].[Action (Perp Race,Perp Sex)]</column>
+            <column>[federated.1hw9kax0bk545i15hnjo80zekp9z].[Action (Arrest Boro)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' scope='cols' value='Arrests' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#d4d4d4' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:ageGroup:nk]' value='66' />
+            <format attr='font-weight' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' value='bold' />
+            <format attr='color' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' value='#000000' />
+            <format attr='font-family' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' value='Tableau Book' />
+            <format attr='color' value='#000000' />
+            <format attr='color' data-class='subtotal' value='#000000' />
+            <format attr='color' data-class='total' value='#000000' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:ageGroup:nk]' value='48' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='font-style' value='normal' />
+            <format attr='text-orientation' value='-90' />
+            <format attr='text-align' value='center' />
+            <format attr='wrap' value='on' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:ageGroup:nk]' value='true' />
+            <format attr='color' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:ageGroup:nk]' value='#000000' />
+            <format attr='color' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:ageGroup:nk]' value='bold' />
+            <format attr='font-weight' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' value='bold' />
+            <format attr='text-orientation' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:Calculation_937593156888641554:nk]' value='-90' />
+            <format attr='font-family' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:Calculation_937593156888641554:nk]' value='Tableau Medium' />
+            <format attr='font-weight' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:Calculation_937593156888641554:nk]' value='bold' />
+            <format attr='color' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:Calculation_937593156888641554:nk]' value='#000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='color' id='refline0' value='#000000' />
+            <format attr='font-weight' id='refline0' value='bold' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:ageGroup:nk]' />
+              <text column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Age Group: </run>
+                <run bold='true'><![CDATA[<[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:ageGroup:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Total Arrests: </run>
+                <run bold='true'><![CDATA[<[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1hw9kax0bk545i15hnjo80zekp9z].[none:Calculation_937593156888641554:nk] / [federated.1hw9kax0bk545i15hnjo80zekp9z].[none:ageGroup:nk])</rows>
+        <cols>[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]</cols>
+      </table>
+      <simple-id uuid='{20FB6818-779C-4809-9404-979FC450CF03}' />
+    </worksheet>
+    <worksheet name='Arrests by Borough'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000'>Arrests by Borough</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='VirtualCollection (VirtualDatabase)' name='federated.1hw9kax0bk545i15hnjo80zekp9z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hw9kax0bk545i15hnjo80zekp9z'>
+            <column caption='Age Group' datatype='string' name='[ageGroup]' role='dimension' type='nominal' />
+            <column caption='Arrest Boro' datatype='string' name='[arrestBoro]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;B&quot;' value='Bronx' />
+                <alias key='&quot;K&quot;' value='Brooklyn' />
+                <alias key='&quot;M&quot;' value='Manhatten' />
+                <alias key='&quot;Q&quot;' value='Queens' />
+                <alias key='&quot;S&quot;' value='Staten Island' />
+              </aliases>
+            </column>
+            <column caption='Arrest Key' datatype='integer' name='[arrestKey]' role='dimension' type='ordinal' />
+            <column-instance column='[arrestKey]' derivation='CountD' name='[ctd:arrestKey:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[arrestBoro]' derivation='None' name='[none:arrestBoro:nk]' pivot='key' type='nominal' />
+            <column-instance column='[arrestKey]' derivation='CountD' name='[pcto:ctd:arrestKey:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Perp Race' datatype='string' name='[perpRace]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;AMERICAN INDIAN/ALASKAN NATIVE&quot;' value='American Indian/Ak Native' />
+                <alias key='&quot;ASIAN / PACIFIC ISLANDER&quot;' value='Asian/Pacific Islander' />
+                <alias key='&quot;BLACK&quot;' value='Black' />
+                <alias key='&quot;BLACK HISPANIC&quot;' value='Black-Hispanic' />
+                <alias key='&quot;UNKNOWN&quot;' value='Unknown' />
+                <alias key='&quot;WHITE&quot;' value='White' />
+                <alias key='&quot;WHITE HISPANIC&quot;' value='White-Hispanic' />
+              </aliases>
+            </column>
+            <column caption='Perp Sex' datatype='string' name='[perpSex]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;F&quot;' value='Female' />
+                <alias key='&quot;M&quot;' value='Male' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[Action (Age Group)]'>
+            <groupfilter function='level-members' level='[ageGroup]' user:ui-action-filter='[Action2_C4715D3BC5AC42F29317C773DB5D2582]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[Action (Perp Race)]'>
+            <groupfilter function='level-members' level='[perpRace]' user:ui-action-filter='[Action1_AD9830421E8641E3935811E0F577E1EF]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[Action (Perp Race,Perp Sex)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_AD9830421E8641E3935811E0F577E1EF]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[perpRace]' />
+              <groupfilter function='level-members' level='[perpSex]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestBoro:nk]'>
+            <groupfilter function='level-members' level='[none:arrestBoro:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestBoro:nk]</column>
+            <column>[federated.1hw9kax0bk545i15hnjo80zekp9z].[Action (Perp Race)]</column>
+            <column>[federated.1hw9kax0bk545i15hnjo80zekp9z].[Action (Age Group)]</column>
+            <column>[federated.1hw9kax0bk545i15hnjo80zekp9z].[Action (Perp Race,Perp Sex)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='439' />
+            <format attr='height' value='403' />
+            <format attr='text-format' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[pcto:ctd:arrestKey:qk]' value='p0.0%' />
+            <format attr='color' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[pcto:ctd:arrestKey:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[pcto:ctd:arrestKey:qk]' value='bold' />
+            <format attr='color' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' value='bold' />
+            <format attr='font-family' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' value='Tableau Medium' />
+            <format attr='font-weight' data-class='subtotal' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' value='bold' />
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='normal' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' value='bold' />
+            <format attr='font-weight' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestBoro:nk]' value='normal' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestBoro:nk]' />
+              <wedge-size column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' />
+              <text column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestBoro:nk]' />
+              <text column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[pcto:ctd:arrestKey:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Arrest Boro: </run>
+                <run bold='true'><![CDATA[<[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestBoro:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Total Arrests: </run>
+                <run bold='true'><![CDATA[<[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% of Total Arrests: </run>
+                <run bold='true'><![CDATA[<[federated.1hw9kax0bk545i15hnjo80zekp9z].[pcto:ctd:arrestKey:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='10'><![CDATA[<[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestBoro:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='10'><![CDATA[<[federated.1hw9kax0bk545i15hnjo80zekp9z].[pcto:ctd:arrestKey:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.3953038454055786' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]</field>
+                  <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestBoro:nk]</field>
+                  <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[pcto:ctd:arrestKey:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>10018</value>
+                <value>&quot;S&quot;</value>
+                <value>0.044157057724179272</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-2' y='24' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{CB5DEC69-23E8-4C7B-9F4F-D35350FE263E}' />
+    </worksheet>
+    <worksheet name='Arrests by Month'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000'>Arrests by Month</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Tableau Medium'>Month</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='VirtualCollection (VirtualDatabase)' name='federated.1hw9kax0bk545i15hnjo80zekp9z' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters' />
+          <datasource-dependencies datasource='federated.1hw9kax0bk545i15hnjo80zekp9z'>
+            <column caption='Arrest Date' datatype='datetime' name='[arrestDate]' role='dimension' type='ordinal' />
+            <column caption='Arrest Key' datatype='integer' name='[arrestKey]' role='dimension' type='ordinal' />
+            <column-instance column='[arrestKey]' derivation='CountD' name='[ctd:arrestKey:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[arrestDate]' derivation='Month' name='[mn:arrestDate:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[arrestDate]' derivation='Month' name='[mn:arrestDate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.1hw9kax0bk545i15hnjo80zekp9z].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' field-type='quantitative' max='21252' min='16000' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' scope='rows' value='Arrests' />
+            <format attr='height' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[mn:arrestDate:ok]' value='49' />
+            <format attr='title' class='0' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[mn:arrestDate:qk]' scope='cols' value='Month' />
+            <encoding attr='space' class='0' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[mn:arrestDate:qk]' field-type='quantitative' max='12' min='1' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='1' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' field-type='quantitative' fold='true' max='21252' min='16000' range-type='fixed' scope='rows' synchronized='true' type='space' />
+            <format attr='title' class='1' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' scope='rows' value='' />
+            <format attr='display' class='1' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' scope='rows' value='false' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='tick-color' value='#00000000' />
+            <format attr='stroke-color' value='#d4d4d4' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[mn:arrestDate:ok]' value='86' />
+            <format attr='font-family' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' value='Tableau Medium' />
+            <format attr='font-weight' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' value='bold' />
+            <format attr='color' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-size' value='9' />
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='vertical-align' value='center' />
+            <format attr='text-orientation' value='0' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' value='#000000' />
+            <format attr='color' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[mn:arrestDate:ok]' value='#000000' />
+            <format attr='font-weight' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' value='bold' />
+            <format attr='font-weight' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[mn:arrestDate:ok]' value='bold' />
+            <format attr='text-format' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[mn:arrestDate:ok]' value='iLLL' />
+            <format attr='font-family' field='[Parameters].[Parameter 1]' value='Tableau Medium' />
+            <format attr='font-weight' field='[Parameters].[Parameter 1]' value='bold' />
+            <format attr='color' field='[Parameters].[Parameter 1]' value='#000000' />
+            <format attr='wrap' field='[Parameters].[Parameter 1]' value='on' />
+            <format attr='color' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[mn:arrestDate:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[mn:arrestDate:qk]' value='bold' />
+            <format attr='text-format' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[mn:arrestDate:qk]' value='iLLL' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='line-visibility' id='refline1' value='on' />
+            <format attr='line-pattern-only' id='refline1' value='solid' />
+            <format attr='stroke-size' id='refline1' value='3' />
+            <format attr='font-family' id='refline1' value='Tableau Medium' />
+            <format attr='color' id='refline1' value='#000000' />
+            <format attr='text-orientation' id='refline1' value='0' />
+            <format attr='wrap' id='refline1' value='off' />
+            <format attr='vertical-align' id='refline1' value='top' />
+            <format attr='text-align' id='refline1' value='left' />
+            <format attr='stroke-color' id='refline1' value='#f9a72981' />
+            <format attr='font-weight' id='refline1' value='normal' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <reference-line axis-column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-table' value-column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' z-order='1' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Month: </run>
+                <run bold='true'><![CDATA[<[federated.1hw9kax0bk545i15hnjo80zekp9z].[mn:arrestDate:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Total Arrests: </run>
+                <run bold='true'><![CDATA[<[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#17becf' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Month: </run>
+                <run bold='true'><![CDATA[<[federated.1hw9kax0bk545i15hnjo80zekp9z].[mn:arrestDate:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Total Arrests: </run>
+                <run bold='true'><![CDATA[<[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#17becf' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Month: </run>
+                <run bold='true'><![CDATA[<[federated.1hw9kax0bk545i15hnjo80zekp9z].[mn:arrestDate:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Total Arrests: </run>
+                <run bold='true'><![CDATA[<[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#17becf' />
+                <format attr='mark-transparency' value='52' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk] + [federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk])</rows>
+        <cols>[federated.1hw9kax0bk545i15hnjo80zekp9z].[mn:arrestDate:qk]</cols>
+      </table>
+      <simple-id uuid='{2630C0C9-8108-4228-8464-543A3FF89E1D}' />
+    </worksheet>
+    <worksheet name='Arrests by Race and Sex'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000'>Arrests by Race and Sex</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='VirtualCollection (VirtualDatabase)' name='federated.1hw9kax0bk545i15hnjo80zekp9z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hw9kax0bk545i15hnjo80zekp9z'>
+            <column caption='Age Group' datatype='string' name='[ageGroup]' role='dimension' type='nominal' />
+            <column caption='Arrest Boro' datatype='string' name='[arrestBoro]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;B&quot;' value='Bronx' />
+                <alias key='&quot;K&quot;' value='Brooklyn' />
+                <alias key='&quot;M&quot;' value='Manhatten' />
+                <alias key='&quot;Q&quot;' value='Queens' />
+                <alias key='&quot;S&quot;' value='Staten Island' />
+              </aliases>
+            </column>
+            <column caption='Arrest Key' datatype='integer' name='[arrestKey]' role='dimension' type='ordinal' />
+            <column-instance column='[arrestKey]' derivation='CountD' name='[ctd:arrestKey:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[arrestBoro]' derivation='None' name='[none:arrestBoro:nk]' pivot='key' type='nominal' />
+            <column-instance column='[perpRace]' derivation='None' name='[none:perpRace:nk]' pivot='key' type='nominal' />
+            <column-instance column='[perpSex]' derivation='None' name='[none:perpSex:nk]' pivot='key' type='nominal' />
+            <column caption='Perp Race' datatype='string' name='[perpRace]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;AMERICAN INDIAN/ALASKAN NATIVE&quot;' value='American Indian/Ak Native' />
+                <alias key='&quot;ASIAN / PACIFIC ISLANDER&quot;' value='Asian/Pacific Islander' />
+                <alias key='&quot;BLACK&quot;' value='Black' />
+                <alias key='&quot;BLACK HISPANIC&quot;' value='Black-Hispanic' />
+                <alias key='&quot;UNKNOWN&quot;' value='Unknown' />
+                <alias key='&quot;WHITE&quot;' value='White' />
+                <alias key='&quot;WHITE HISPANIC&quot;' value='White-Hispanic' />
+              </aliases>
+            </column>
+            <column caption='Perp Sex' datatype='string' name='[perpSex]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;F&quot;' value='Female' />
+                <alias key='&quot;M&quot;' value='Male' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[Action (Age Group)]'>
+            <groupfilter function='level-members' level='[ageGroup]' user:ui-action-filter='[Action2_C4715D3BC5AC42F29317C773DB5D2582]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[Action (Arrest Boro)]'>
+            <groupfilter function='level-members' level='[arrestBoro]' user:ui-action-filter='[Action3_19C04564355E498C87A498E34152C405]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestBoro:nk]'>
+            <groupfilter function='level-members' level='[none:arrestBoro:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:perpRace:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:perpRace:nk]' />
+              <groupfilter function='member' level='[none:perpRace:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:perpSex:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:perpSex:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:perpSex:nk]' member='&quot;U&quot;' />
+                <groupfilter function='member' level='[none:perpSex:nk]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestBoro:nk]</column>
+            <column>[federated.1hw9kax0bk545i15hnjo80zekp9z].[Action (Age Group)]</column>
+            <column>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:perpSex:nk]</column>
+            <column>[federated.1hw9kax0bk545i15hnjo80zekp9z].[Action (Arrest Boro)]</column>
+            <column>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:perpRace:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' value='bold' />
+            <format attr='font-family' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' value='Tableau Medium' />
+            <format attr='font-weight' data-class='subtotal' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' value='bold' />
+            <format attr='font-family' value='Tableau Book' />
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='normal' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='font-family' data-class='subtotal' value='Tableau Book' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' value='bold' />
+            <format attr='font-weight' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestBoro:nk]' value='normal' />
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-family' value='Tableau Medium' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#fd6f30</color>
+                <color>#f97a41</color>
+                <color>#f68553</color>
+                <color>#f38f63</color>
+                <color>#ef9a74</color>
+                <color>#eca484</color>
+                <color>#e9ad93</color>
+                <color>#e6b7a2</color>
+                <color>#e2c0b0</color>
+                <color>#dfc8be</color>
+                <color>#dcd1cc</color>
+                <color>#d9d9d9</color>
+                <color>#cddada</color>
+                <color>#c1dbdc</color>
+                <color>#b5dcdd</color>
+                <color>#a9dddf</color>
+                <color>#9cdee0</color>
+                <color>#8fdfe2</color>
+                <color>#83e0e3</color>
+                <color>#76e1e5</color>
+                <color>#68e2e6</color>
+                <color>#5be3e8</color>
+                <color>#4ee5ea</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-family' value='Tableau Medium' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-family' value='Tableau Book' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' />
+              <color column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' />
+              <text column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:perpSex:nk]' />
+              <text column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:perpRace:nk]' />
+              <text column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Race: </run>
+                <run><![CDATA[<[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:perpRace:nk]>
+]]></run>
+                <run fontcolor='#787878'>Sex: </run>
+                <run><![CDATA[<[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:perpSex:nk]>
+]]></run>
+                <run fontcolor='#787878'>Total Arrests: </run>
+                <run><![CDATA[<[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:perpRace:nk]> <[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:perpSex:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+                <format attr='wrap' value='on' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B4D8DF27-30D0-49C0-826D-EFB5C5B6CD28}' />
+    </worksheet>
+    <worksheet name='Metrics'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='VirtualCollection (VirtualDatabase)' name='federated.1hw9kax0bk545i15hnjo80zekp9z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hw9kax0bk545i15hnjo80zekp9z'>
+            <column caption='Age Group' datatype='string' name='[ageGroup]' role='dimension' type='nominal' />
+            <column caption='Arrest Boro' datatype='string' name='[arrestBoro]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;B&quot;' value='Bronx' />
+                <alias key='&quot;K&quot;' value='Brooklyn' />
+                <alias key='&quot;M&quot;' value='Manhatten' />
+                <alias key='&quot;Q&quot;' value='Queens' />
+                <alias key='&quot;S&quot;' value='Staten Island' />
+              </aliases>
+            </column>
+            <column caption='Arrest Key' datatype='integer' name='[arrestKey]' role='dimension' type='ordinal' />
+            <column caption='Arrest Precinct' datatype='integer' name='[arrestPrecinct]' role='measure' type='quantitative' />
+            <column-instance column='[arrestKey]' derivation='CountD' name='[ctd:arrestKey:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[arrestPrecinct]' derivation='CountD' name='[ctd:arrestPrecinct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[jurisdictionCd]' derivation='CountD' name='[ctd:jurisdictionCd:qk]' pivot='key' type='quantitative' />
+            <column caption='Jurisdiction Cd' datatype='integer' name='[jurisdictionCd]' role='measure' type='quantitative' />
+            <column caption='Perp Race' datatype='string' name='[perpRace]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;AMERICAN INDIAN/ALASKAN NATIVE&quot;' value='American Indian/Ak Native' />
+                <alias key='&quot;ASIAN / PACIFIC ISLANDER&quot;' value='Asian/Pacific Islander' />
+                <alias key='&quot;BLACK&quot;' value='Black' />
+                <alias key='&quot;BLACK HISPANIC&quot;' value='Black-Hispanic' />
+                <alias key='&quot;UNKNOWN&quot;' value='Unknown' />
+                <alias key='&quot;WHITE&quot;' value='White' />
+                <alias key='&quot;WHITE HISPANIC&quot;' value='White-Hispanic' />
+              </aliases>
+            </column>
+            <column caption='Perp Sex' datatype='string' name='[perpSex]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;F&quot;' value='Female' />
+                <alias key='&quot;M&quot;' value='Male' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:jurisdictionCd:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestPrecinct:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:jurisdictionCd:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestPrecinct:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[Action (Age Group)]'>
+            <groupfilter function='level-members' level='[ageGroup]' user:ui-action-filter='[Action2_C4715D3BC5AC42F29317C773DB5D2582]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[Action (Arrest Boro)]'>
+            <groupfilter function='level-members' level='[arrestBoro]' user:ui-action-filter='[Action3_19C04564355E498C87A498E34152C405]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[Action (Perp Race)]'>
+            <groupfilter function='level-members' level='[perpRace]' user:ui-action-filter='[Action1_AD9830421E8641E3935811E0F577E1EF]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[Action (Perp Race,Perp Sex)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_AD9830421E8641E3935811E0F577E1EF]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[perpRace]' />
+              <groupfilter function='level-members' level='[perpSex]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1hw9kax0bk545i15hnjo80zekp9z].[:Measure Names]</column>
+            <column>[federated.1hw9kax0bk545i15hnjo80zekp9z].[Action (Perp Race)]</column>
+            <column>[federated.1hw9kax0bk545i15hnjo80zekp9z].[Action (Age Group)]</column>
+            <column>[federated.1hw9kax0bk545i15hnjo80zekp9z].[Action (Perp Race,Perp Sex)]</column>
+            <column>[federated.1hw9kax0bk545i15hnjo80zekp9z].[Action (Arrest Boro)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[:Measure Names]' value='167' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[:Measure Names]' value='14' />
+            <format attr='font-weight' field='[federated.1hw9kax0bk545i15hnjo80zekp9z].[:Measure Names]' value='bold' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1hw9kax0bk545i15hnjo80zekp9z].[Multiple Values]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='22'>&lt;</run>
+                <run fontsize='22'>[federated.1hw9kax0bk545i15hnjo80zekp9z].[Multiple Values]</run>
+                <run fontsize='22'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1hw9kax0bk545i15hnjo80zekp9z].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{22D5E3A8-BE3A-4717-8F91-242A38F78E2E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#f5f5f5' />
+        </style-rule>
+        <style-rule element='dash-text'>
+          <format attr='text-orientation' id='dash-text_262' value='-90' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1600' minheight='800' minwidth='1600' preset-index='17' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='VirtualCollection (VirtualDatabase)' name='federated.1hw9kax0bk545i15hnjo80zekp9z' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1hw9kax0bk545i15hnjo80zekp9z'>
+        <column caption='Arrest Boro' datatype='string' name='[arrestBoro]' role='dimension' type='nominal'>
+          <aliases>
+            <alias key='&quot;B&quot;' value='Bronx' />
+            <alias key='&quot;K&quot;' value='Brooklyn' />
+            <alias key='&quot;M&quot;' value='Manhatten' />
+            <alias key='&quot;Q&quot;' value='Queens' />
+            <alias key='&quot;S&quot;' value='Staten Island' />
+          </aliases>
+        </column>
+        <column-instance column='[arrestBoro]' derivation='None' name='[none:arrestBoro:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='67' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='70' param='horz' type-v2='layout-flow' w='99000' x='500' y='1000'>
+            <zone h='98000' id='68' type-v2='layout-basic' w='89000' x='500' y='1000' />
+            <zone fixed-size='160' h='98000' id='69' is-fixed='true' param='vert' type-v2='layout-flow' w='10000' x='89500' y='1000'>
+              <zone h='15750' id='71' name='Arrests by Borough' pane-specification-id='0' param='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestBoro:nk]' type-v2='color' w='10000' x='89500' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='2750' id='72' name='Arrests by Borough' pane-specification-id='0' param='[federated.1hw9kax0bk545i15hnjo80zekp9z].[cnt:arrestBoro:qk]' type-v2='size' w='10000' x='89500' y='16750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='18250' id='350' name='Arrests by Race and Sex' param='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestBoro:nk]' type-v2='filter' w='10000' x='89500' y='19500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8125' id='351' name='Arrests by Race and Sex' pane-specification-id='0' param='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' type-v2='color' w='10000' x='89500' y='37750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='100000' id='1' param='horz' type-v2='layout-flow' w='100000' x='0' y='0'>
+          <zone fixed-size='1066' h='100000' id='58' is-fixed='true' param='vert' type-v2='layout-flow' w='66625' x='0' y='0'>
+            <zone fixed-size='107' forceUpdate='true' h='15875' id='8' is-fixed='true' type-v2='text' w='66625' x='0' y='0'>
+              <formatted-text>
+                <run bold='true' fontcolor='#000000' fontsize='24'>NYPD Arrests Dashboard 2023</run>
+              </formatted-text>
+              <zone-style>
+                <format attr='border-color' value='#f5f5f5' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='1' />
+                <format attr='margin' value='10' />
+                <format attr='padding' value='10' />
+                <format attr='background-color' value='#ffffff' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='130' h='18750' id='59' is-fixed='true' name='Metrics' show-title='false' w='66625' x='0' y='15875'>
+              <layout-cache cell-count-w='3' type-h='cell' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#f5f5f5' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='1' />
+                <format attr='margin' value='10' />
+                <format attr='padding' value='10' />
+                <format attr='background-color' value='#ffffff' />
+              </zone-style>
+            </zone>
+            <zone h='65375' id='60' param='horz' type-v2='layout-flow' w='66625' x='0' y='34625'>
+              <zone h='65375' id='62' name='Arrests by Age Group' w='36750' x='0' y='34625'>
+                <layout-cache minwidth='168' type-h='cell' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#f5f5f5' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='10' />
+                  <format attr='padding' value='10' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='458' h='65375' id='52' is-fixed='true' name='Arrests by Borough' w='29875' x='36750' y='34625'>
+                <layout-cache type-h='cell' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#f5f5f5' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='10' />
+                  <format attr='padding' value='10' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='100000' id='349' name='Arrests by Race and Sex' w='33375' x='66625' y='0'>
+            <layout-cache cell-count-h='1' cell-count-w='1' non-cell-size-h='43' type-h='cell' type-w='cell' />
+            <zone-style>
+              <format attr='border-color' value='#f5f5f5' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='1' />
+              <format attr='margin' value='10' />
+              <format attr='padding' value='10' />
+              <format attr='background-color' value='#ffffff' />
+            </zone-style>
+          </zone>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1350' minheight='1350' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='450' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='449' param='vert' type-v2='layout-flow' w='99000' x='500' y='1000'>
+                <zone fixed-size='107' forceUpdate='true' h='15875' id='8' type-v2='text' w='66625' x='0' y='0'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontsize='24'>NYPD Arrests Dashboard 2023</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#f5f5f5' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone h='18250' id='350' mode='checkdropdown' name='Arrests by Race and Sex' param='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestBoro:nk]' type-v2='filter' w='10000' x='89500' y='19500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='100000' id='349' is-fixed='true' name='Arrests by Race and Sex' w='33375' x='66625' y='0'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' non-cell-size-h='43' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#f5f5f5' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone h='8125' id='351' name='Arrests by Race and Sex' pane-specification-id='0' param='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' type-v2='color' w='10000' x='89500' y='37750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='108' h='18750' id='59' is-fixed='true' name='Metrics' show-title='false' w='66625' x='0' y='15875'>
+                  <layout-cache cell-count-w='3' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#f5f5f5' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='65375' id='62' is-fixed='true' name='Arrests by Age Group' w='36750' x='0' y='34625'>
+                  <layout-cache minwidth='168' type-h='cell' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#f5f5f5' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='65375' id='52' is-fixed='true' name='Arrests by Borough' w='29875' x='36750' y='34625'>
+                  <layout-cache type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#f5f5f5' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone h='15750' id='71' name='Arrests by Borough' pane-specification-id='0' param='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestBoro:nk]' type-v2='color' w='10000' x='89500' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='2750' id='72' name='Arrests by Borough' pane-specification-id='0' param='[federated.1hw9kax0bk545i15hnjo80zekp9z].[cnt:arrestBoro:qk]' type-v2='size' w='10000' x='89500' y='16750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{B17DC663-2B76-4019-8D3C-665B4A78FCBB}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Metrics'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[:Measure Names]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestKey:ok]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestYear:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5F19B530-CCD4-412C-8361-B864A426AF5F}' />
+    </window>
+    <window class='worksheet' name='Arrests by Age Group'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:ageGroup:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:Calculation_937593156888641554:nk]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:ageGroup:nk]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestBoro:nk]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestKey:ok]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[usr:Calculation_1666331870441832449:nk:1]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DFC78F15-CE72-489C-A1F3-6DCEACB7C2A6}' />
+    </window>
+    <window class='worksheet' name='Arrests by Borough'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestBoro:nk]' type='filter' />
+          </strip>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestBoro:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:ageGroup:nk]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestBoro:nk]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestDay:qk]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestKey:ok]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestMonth:qk]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestYear:qk]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:lawCatCd:nk]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:perpRace:nk]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:perpSex:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{487432E3-9421-497B-AF50-7B234FE6C72B}' />
+    </window>
+    <window class='worksheet' name='Arrests by Month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[Parameters].[Parameter 1]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[mn:arrestDate:ok]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[mn:arrestDate:qk]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:Calculation_937593156884291596:nk]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:Calculation_937593156884754446:nk]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:Calculation_937593156891807767:nk]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestKey:ok]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestMonth:qk]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[yr:arrestDate:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{85F00DC0-7E46-4200-BFAA-1135166E475C}' />
+    </window>
+    <window class='worksheet' name='Arrests by Race and Sex'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestBoro:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:ageGroup:nk]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestDay:qk]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestKey:ok]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestMonth:qk]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestYear:qk]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:lawCatCd:nk]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:perpRace:nk]</field>
+            <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[pcto:ctd:arrestKey:qk:1]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B34648D8-E38D-4FB2-80B3-B4FA97ECAF9D}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard'>
+      <viewpoints>
+        <viewpoint name='Arrests by Age Group'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[usr:Calculation_1666331870441832449:nk:1]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Arrests by Borough'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[none:arrestBoro:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Arrests by Race and Sex'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1hw9kax0bk545i15hnjo80zekp9z].[ctd:arrestKey:qk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Metrics'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{DE38E810-9994-4372-A0C0-FA8148FA3281}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Arrests by Age Group' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Arrests by Borough' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAATiUlEQVR4nO3da3Bc5X3H8e9z9r4raSXbkmxZloh8RSbY2DElMYR0IKEOJu4waTLNpc11
+      mrZJ2knyojNJpy+YaaalITPtJDQpadMMAy0tl3RSMwGMAykyjkMDGFOMDZbR1ZJWtrTa27k9
+      fSGLqyzJ8u6ePXv+nxm/8Hq9+9+Z53fOeZ7zPM9RWmuNEAFleF2AEF6SAIhAkwCIQJMAiECT
+      AIhAkwCIQJMAiECTAIhAkwCIQJMAiECTAIhAkwCIQJMAiECTAIhAkwCIQJMAiECTAIhAkwCI
+      QJMAiECTAIhAkwCIS+Y4zjte01rP+3qtCXtdgKgdhw4dolQqMTQ0xNVXX834+DiO42BZFm1t
+      baxZs4aTJ0+yefNmnn/+eTZt2kQmk6G/v5+enh7S6TTDw8N0dnYyPDzMwMAA+/bt8/pnLUgC
+      IF7X2tpKX18fsViMVCrF448/TiKR4D3veQ8PPfQQPT09pFIpJicnKZVKHD9+nGw2i1KKU6dO
+      MTIyQjKZ5Nlnn2X9+vWEw7XfvJTsCyTmvPzyywwODtLV1cX09DQTExOsX7+eTCZDsVikvb2d
+      aDSK1hrbtjEMg7GxMdrb2xkaGqKpqYlEIoFSitdee42uri42bdrk9c9akARABJp0gsWSnDhx
+      gmKxCMDx48cZGxtjYGCATCaDn4+hEgCxqEKhwD333MPk5CTZbJa7776bJ598kr6+Pu6//35m
+      Zma8LnHZar+XIjw3PDxMc3MzR48eJRQK0dzcTE9PD4ODg6/3FRobG70uc1mkDyACTS6BRKDJ
+      JZC4KFprbO1QsPNMFs8xXphgypwma86Qs3MU7CKOa2Nrh+v6o7xr/3MQiaDiMYyWFlRTI6o5
+      TWhNO0ZnB0bHGlQ8hopEPPk9EgBxQVprTNdicGaI/unXOJ0dYCQ/ykjuDDPW4h3fLaeaWPvw
+      Ywu/SSmM9lZC63sIbeohvLWX8I4rCa1bi4pGy/RLLkwCIF6ntcYGhrID/Gb8OV46e4LT2QGK
+      TrGSX4o7OoY7Oob11NOvv6xWrSC87d1Er72GyPW7CXWvQ1XgzrIEIOC01hS05tmSxf8USrxg
+      mmwef5ITZ57ytq6JSawDT2AdeAIAo3sdsd+5geiHP0R46+WoSHmargQgoByt+T/T4kC+yNNF
+      k/ybBgOt1LsAbwPwdu7pAQo/+DGFH/wYo6uT2M03EfvY7xK6rAtlLH8sRwIQMDOuy89zRQ4U
+      igzZ809Xzqc2EDEiWK5V5eqWxn1tkMKdP6Lwg38hfNW7SXz+00Rv/AAqFrvoz5IABIDWmlHH
+      5We5PI/nS2852s/ntBvi8sbL6J86UaUKl8l1sZ95juwzz2GsaSf+2U8R/+RHMRoalvwRch+g
+      jmmtGbEdvj81w1fGJvlZrrho4wcoao3RtLkKFZaPO3KG/F9/h7PX7yX/j/+Mu8TpGRKAOjXt
+      uvzwfMN/JF/kYi9m7IYNKFRFaqskPZEh/+3vcvb6vRTu+gm6uPAIlgSgzlha8+BMni+PTbJ/
+      GQ1/zni4laZYuqy1VZOeyJC77XbO3fxxSo8eRLvuvO+TANQJrTXHSibfGD/Lj6dzTLmXNsVr
+      2HFob9lapuq845x8lewXvkr2S1/DGRx+x79LAOpA3nW5azrHtzJT9F9gZGc5zOS7yvZZXjN/
+      foBzez5K4e770G9arC8B8DGtNS+WTL4xcY6f5QrMf5JfvlJqA2GjfgYK9XSW3DdvY/rzX8EZ
+      GgEkAL7laM39MwX+KjN1wfH8S/WqG6KzsX7OAnOsg7/k3L7fxzzwhNwH8KMpx+V7U1kOF82K
+      fk9Ra8JNm6HW7wcsgx7PMP3FP5MA+M2rlsXtk1mGq7TplHl+OFRTh+umHEcugfxCa82viyX+
+      cmKqao0fIBPx93DoYiQAPqC15tF8kb+ZnGamyitYB22Hjpbeqn5nNUkAapzWmgdnCtw5NUNl
+      r/gvrJDs8eibK08CUMNcrblvJs9PsrmyD3FeDKthA2FVn93F+vxVHjt48CCZTIbLL7+c1tbW
+      2UlpIyOsXLkS0zTJ5XLE43GmpqbYsmXLvFuKuFrzHzN57s3mPe9+nnRC9DZdxqmpkx5XUn4S
+      gAoYGxtj586dPPDAA2zbto0XX3yRlpYWMpkM69atw7IsEokEuVyO5ubmdwRg7rKnFho/zA6H
+      xtJbQAIgluKaa66hr6+PvXv3MjIywi233MKZM2fYtWsXjuO8voHs3IZTb6a15rF8kbuzuZpo
+      /HOKqfVel1AREoAK6O7upru7G4De3tkRlA0bNrzjffO99mzJ4odTM55e889nPNxKOppmypzy
+      upSykgBUyLFjx4jH42itaW9vJ5VK8cwzz9DR0cHExASdnZ2k0+m37KF/yrL5ztlpz0Z7FjLo
+      uOxu6WXqzCGvSykrCUAFaK2Jx+McPnyYjo4OXNdlw4YNWJbFww8/jOM4GIbB7t27Xz9DTLsu
+      f3d2mmwN71RZSK0HJABiCe677z727NnD8ePHKRQKZDIZSqUSK1euJJlMYts2Y2Nj9Pb24mjN
+      P5zNMlihSW3l4jSsJ6zC2Nr2upSykc1xPTY34vOv2ZzXpSwqrqB38CdLHg791LEmtt+xv8JV
+      XRq5Eeaxly2be33Q+AGKGsKNG70uo6wkAB7Kuy5/fy5bk53eC7Eba/uZXxdLAuARrTX3ZPM1
+      f93/dqPhVaSj9TM7VALgkZcsm/25gtdlXLRhR7O2ZYvXZZSNBMADJa25a2oGfx3731BI1U8/
+      QALggUdzRU5a/h1KNJPdhFTI6zLKQgJQZWcdl/+cyXtdxiU5qWOsa+r2uoyykABU2QMzec5e
+      YJcyvyhqiNTJaJAEoIrGbIdH8hV82koVlepkdqgEoIoeyhUo1smN90x0dV0Mh0oAqmTMdjhQ
+      J0d/gEFH055+53Ruv5EAVMl/1dHRf47V6P/7ARKAKph2XX5RR0f/OaU6GA6VAFTBE/liTc/z
+      X65XdJx1jV1el3FJJAAV5pxf41uPihpCPp8dKgGosOOmzWmfTXi7GFaDBEAs4PFCsaZ2dyi3
+      THQ1TdEmr8tYNglABeVdl6cLJa/LqKhBR7M67d+zgASggo6aVl12ft/O9vFwqASggg7V+dF/
+      TjF5GYZPm5I/q/YBU2uOmst9SKm/vKLjdPl0dqgEoEL6LZsJx9+zPpeqqDURnw6HSgAq5LmS
+      n5a6XzrTp8OhEoAKORaQy585fh0OlQBUQNHVvOLjJY/LMeDT4VAJQAUMOzbTbv0Pf76d48Ph
+      UAlABbxsBuvoP2d2OFR5XcZFkQBUwGt2MAPQr+N0NV3mdRkXRQJQAf1W/U5+W8iM1oQa/bVK
+      TAJQZrbWjNTx7M/F6MbNXpdwUSQAZZZ1NTM+3/bkUkxEV9MYafC6jCWTAJTZlOv6arfnchuw
+      XdY0+2fPIAlAmY07wb38AWYf7uejyyAJQJlNBmT+z0LyyR6UT4ZDJQBlNhPAG2Bvdxr/LJaX
+      h+SV2XSAO8Bzpl1NrGkTcNjrUmZFI6hkEpVKoJqSGKtSGM0xVIOWAJRbIQArwJbCaahwABQQ
+      i6EaGmYbdTqB0ZJEpcOoJo3RBKoBVKNGJUyUUQAjD04GrNPgzg5VSADKzJQAAHAutoaGSOri
+      /2MohEomZo/Y6STGiiRqRQKjEVQjqDQYDaAaXAiXUKEckAM7A3Ye9DyDEAsMy0kAyiyYkyDe
+      6ZTt0tr0ph2koxFUKoVqTGE0J1EtCYyWKKpBoxrPN+q0RiUdlJGHUB7cKbCHwZ7nUVIuCzbs
+      pZIAlJlTR2eAEBBSEEERVhBCEUMT0Q5Jxybu2kRdh4RrEbMt4laBmFUiaeaJWkUa10LqL3Zi
+      pDXETZSRAyMH9sjs0dqdZ81ElZdRSADKLKIqN/wXOv8nrBQRBWEUETRR7ZBwbBJvapDx8w0y
+      apVImHliVpGEmQezOPunlEObRSjlCTsWMaWIKUVcKRJKETcUEatEyCoSNguES3lCVomwmQfX
+      AdsCxwLHAceEeYLvvn8HbsuvZv9So3cHJQBlFkER5nwjZfYIGlaKmOvOHjHPN9a4a5NwLGJW
+      kZg910hLxK0CCXO24c6+XjjfeAtEzMI8DbIArv1Gg3QdsOdvkFVn1P6ImASgzD7z0mN84tgv
+      CZfyhM08IcskbOYxrNKbjphzR8867zGEaiCEi5AAlFkqM0jqhYNel1ETdMTrChYnd4LLTCX9
+      /9igsvHBowMkAOWWkgAAYIRB1f4lngSg3Jrbva6gNsSTYM14XcWiJADl1rIafDITsqISjWhr
+      2usqFiUBKLdUM8QSXlfhvUQjmFmvq1iUBKDcEo0gHeHZSyA753UVi5IAlJkyQtDhr50RKiLk
+      j8tACUAlrF6/+HvqnI5IAAJLrfXPmtiK8cE0CJAAVMa6XjB8cBeoksK1Pw0CJACVsWINNK3y
+      ugpv+ST/EoAKUKEIdL/b6zI8peUMEGxq4y6vS/CWnAECbuOu2fkwQeWTny4BqJS2bljV6XUV
+      3vHBWgCQAFSMUgZc8X6vy/COXAIJdeWNUME1wrVMOsECOrfAig6vq/CAAkMCEHgqHIGde7wu
+      o/riSXDyXlexJBKAClM7PwwhnwyJlEuiEW3W/loAkABUXttl0LPD6yqqK9EIVu2vBQAJQMUp
+      pVC7P+p1GdUVb5AAiDe54npo9cd++WURNkDLbFBxngpHUdd+zOsyqscnQ6AgAaieXbdAU6vX
+      VVSF9slNMJAAVI1KNsH1n/C6jOqQM4CYj3rvrZBu87qMypMzgJiPSjahbviM12VUno9ue0gA
+      qu29t8Ka+t41QvtkJihIAKpORWKovV+t70lycgYQC+rdDdtu9LqKypEzgFiIUgZq39cg2eR1
+      KZUhnWCxGNWyGnXzl70uoyL8shYAJADeuuZW2FqHq8bkDCCWQoVCqI99s77uEEfj4M7zXN8a
+      JQHwmEq3oT7+rfrZSS6WQvvgwRhzJAA1QPVeBx/6otdllEcyDeaU11UsmQSgFiiF+uDnoPda
+      ryu5dPEUWLX/XIA5EoAaoUIR1Cdvg46NXpdyaWIRcGv0sfDzkADUEJVqRn3uO/5+0J7PujIS
+      gBqjVq1DfeZvZ9fV+pCf1gKABKAmqcuuRH3hu7PX034T9tccJwlAjVLrd6I+/W2IxL0u5eKE
+      /LEWeI4EoMpc12VqamnDhGrrdajP3g4xH50JfHYGUFpr/0zc8JE77riDPXv28NOf/pSPfOQj
+      2LbN5OQkqVSKvr4+brrpJkZHRzEMg1OnTnHmzBn27dvH+Pg4DQ0NZLNZrr32WpRS6Ff+F33X
+      n0Oh9rcacd+3Hdc97HUZSyYBqJB7772Xc+fOkU6nSafT9Pf309bWhlKKUCjE5OQkSinC4TA9
+      PT0MDQ0BYJomruvS1tbGjTfeSCQSAUAPvIj+0dfh3KiXP2tR7nXbcS0JQOANDQ1hmiaJRIJM
+      JkMsFiOZTAKzm2WZpsnY2BhdXV2MjIzQ0NBANBpldHSUjo4OotEoq1atwjDeuErVZ0dnzwRD
+      x736WYtyf3sbbuFXXpexZBIAn9GFGfS/3wbPPuJ1KfNyb9yGO+OfAPho8Zp/OY7DU089RWtr
+      K2NjY2zcuJF0Os3hw4dZu3Yt+Xye1tZW1q5di1pkqaRKNMAffBvduRkevhMcu0q/Ymn8tBaA
+      2AoZBaoGpRSJRILR0VFM06S/v594PM709DR9fX0cOXKE/fv3c/r06aV9nmFg3PBZ1Je+Dy1r
+      Klz9RfLJjTDV9ltEPvhvEoBqKBaLHDp0iFWrZp8dnM1mOXLkCLFYjO3bt7Nt2zY6OjowzYuY
+      Q6MUauMu1DfuhV17gRoYfgxFgBqfBxSKE9r2dcIf+CGqoVP6APVAaxeeP4h+8HY4d8a7QlLN
+      2LsbYPoV72pYgFq5ndDOb2Ks2PrGaxKA+qFz59D//T14+kFwneoX0NqNvfUsFMer/90LiTQS
+      2vonGJs+gTIib/knCUCd0VrD6aOzQThR5dGYdb3YXS+BUyNLIlUIo+dWQlv/GJVcPf9bJAD1
+      SbsuPPco+uf/BKNVuiTZsAN71aHqfNdClIFacx2hK/4U1bJ1wZE1CUCd07YFzz2GfvRHlQ/C
+      lh3YzR4GYK7h9/4RauWVs89qXuy/SACCQdsWvPALdN/98HJlpirorTtwGj0IgBHF6LwBY/Mf
+      olZcsaSGP0cCEDBau9B/FP30g/DCE5A7V77PvnIHTrKKAWhYh9F9M6H1vweJ1YveRJyPBCDA
+      dCELRw+if/MInDgC9qWN4esdV+FEny5TdRcQTWOseT9G94dRq3ejjEubzCABEKA1Oj89e4l0
+      9BfwyjPLmnqtd12FE6pAAFIdGG1XY3R+ENV+DSqcKNtHSwDEW2mNtkrw2jH0yV/DyWdg+GXI
+      L76Ix33vdlx9qf0LBYlW1KqrMFZuQ61+H6qp55KP9Bf8NgmAWJDWaNuEzBAMHUcPn4Azr0Jm
+      GKbG3hIM99rtuPYSA6BCEFuBSrZDqhOjeTMqvRG14nKIr3rHDatKkQCIZdHanZ2JWspDdhJm
+      JtFJhS4NgFMC7YBjzW75GIqBEUXFWiDaiIo2Q6INQlFQ4WV1XstFAiACTWaDikCTAIhAkwCI
+      QJMAiECTAIhAkwCIQJMAiECTAIhAkwCIQJMAiECTAIhAkwCIQJMAiECTAIhAkwCIQJMAiECT
+      AIhAkwCIQJMAiECTAIhAkwCIQJMAiECTAIhAkwCIQJMAiED7f6rSMUvbW+TLAAAAAElFTkSu
+      QmCC
+    </thumbnail>
+    <thumbnail height='192' name='Arrests by Month' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Arrests by Race and Sex' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFs0lEQVR4nO3d3W9TdRzH8U/PurGxwUb3wGjnBhuSGGBKFARM1HhvjDHGv8D4V/BvcGFi
+      Yow3xsSYEEMkIYHIjSLjSSAmGzBBhLKtj5ttz5MXBAJXJELWwuf9uuo56cX3nJ53+zvtRTNp
+      mqYCTAXtHgBoJwKAtezjG/Uk0Y0watcswLp7IoDrYaQjy5V2zQKsO5ZAsEYAsEYAsEYAsEYA
+      sEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYA
+      sEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYA
+      sEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAHaBR
+      vKfbP/6g4ulTWrt169H+tb9vq3H3rtIk0c1vv1H58iWVL16QJJUvXlASRe0a+aWRbfcAkJJm
+      U1GtKklaObukG19/paG9r6t7aEiVPy5r+vMvFNWqWltcVBK2dOv775Q78LZWzp1Vz5acJj7+
+      pM1H8OIigA7QvXlQvdvy6tuWV9xsqCc3rJ5cTpI0+u57SpNYY+9/oCSKlMaxsps2aWNhQv1T
+      2xX09rZ5+hdbJk3T9OHGpWZLR5Yr7ZwHWFd8AnSY0tw5Ne7dVdDbq6Arq+HD72jpzC8KursV
+      rdY1MLNTK7/9qolPP1OQ5eV7VpzBDhNWKgorFQWNhjLZrDJBoKTVUrS6qrjxr4KeDerekuPi
+      f044ix2mb+KVB+/+GzZISaLS3O9Smmpwzx7VFxaUJrFy+/e3e8yXBvcAsMbvALBGALBGALBG
+      ALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBG
+      ALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBG
+      ALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALCW
+      SdM0fbix0mxqbnmlnfMA6yr7+EZPHGusXmvXLMC6YwkEawQAawQAawQAawQAawQAawQAawQA
+      awQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQA
+      awQAawQAa9mnPwXPw1+Li7o+P69Gs6lKuax8Pq+JyUldu3pVb+zbp3q9rld37dKZ06eVCQLl
+      cjlt3rxZmSBQqVRSYWJCS8Wi+gcGFMexojBUGEWanJrSl0eP6q0DB5QkibbkciqXSpqemVEQ
+      BNo6Pt7uQ+9oBLBOxsfHdfLECQ0ODalQKKgVhjo/N6fBwUEtzM+rXCopjmMtLS2pXqtpbW1N
+      fX19qlWrGhgY0LUrV1Sv1TQxOamenh7VqlWNjI5qx/S0hkdGVC6V1Gq19Oe1a8oXCjp18qR2
+      zMwQwFM88f8A9bU1Xb99u53zvNT+uXNHQVeX+vv7FUWRwlZLQVeXWs2mVpaX9dru3apWq8pI
+      ipNElXJZzUZDxWJRe2dndf/+fY2OjSmTyUiSivfuaWr7dq2uriqJ4wf7ikVtHR9XFIZqNpua
+      nJpq4xF3PgKANZZAHeZ+saifjh3TwUOHdOH8eX340Uf6+fhxjY6N6cbCgoZHRjS2dave3L9f
+      QcB3GM+KM9hhrl658ujxwcOH1QpDbcvnlc1mlS8UtGd2Vgvz84rCsI1TvjxYAnWgcrmsNEnU
+      t3GjFm/efHTxt1otxXGsleVlzezc+eheAP8fAcAaSyBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY
+      IwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY
+      IwBY+w8Y6I5K/cL1qwAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard' width='192'>
+      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
+      90D/Dwc4T4XoFVikAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='64' name='Metrics' width='192'>
+      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
+      ENlAlNiHAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>

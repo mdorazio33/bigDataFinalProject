@@ -1,0 +1,21 @@
+Data Dictionary for All Original Columns in the NYPD Arrests 2023 Dataset
+
+ARREST_KEY = Randomly generated persistent ID for each arrest
+ARREST_DATE = Exact date of arrest for the reported event
+PD_CD = Three digit internal classification code
+PD_DESC = Description of internal classification corresponding with PD code
+KY_CD = Three digit internal classification code
+OFNS_DESC = Description of internal classification corresponding with KY code
+LAW_CODE = Law code charges corresponding to the NYS Penal Law, VTL and other various local laws
+LAW_CAT_CD = Level of offense: felony, misdemeanor, violation
+ARREST_BORO = Borough of arrest. B(Bronx), S(Staten Island), K(Brooklyn), M(Manhattan), Q(Queens)
+ARREST_PRECINCT = Precinct where the arrest occurred
+JURISDICTION_CODE = Jurisdiction responsible for arrest
+AGE_GROUP = Perpetrator's age within a category
+PERP_SEX = Perpetrator's sex description
+PERP_RACE = Perpetrator's race description
+X_COORD_CD = Midblock X-coordinate for New York State Plane Coordinate System
+Y_COORD_CD = Midblock Y-coordinate for New York State Plane Coordinate System
+Latitude = Latitude coordinate for Global Coordinate System, WGS 1984 (EPSG 4326)
+Longitude = Longitude coordinate for Global Coordinate System, WGS 1984 (EPSG 4326)
+New Georeferenced Column = Georeferenced Point
