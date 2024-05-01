@@ -2,7 +2,7 @@
 
 For this project, I used a combination of MongoDB and Tableau to import and visualize an authentic 226,000-row, 19-column public NYPD Arrests dataset for the year 2023 obtained from NYC OpenData.
 
-I first downloaded the data as a CSV and created a new MongoDB database cluster using MongoDB Atlas. Afterwards, I connected my cluster to Studio 3T and imported my dataset. From within Studio 3T, I modified the field names to camelcase for better readability, used an aggregation pipeline to derive arrestYear, arrestMonth, and arrestDay columns from the arrestData column via an addFields statement, and combined them into the dataset via a merge statement.
+I first downloaded the data as a CSV and created a new MongoDB database cluster using MongoDB Atlas. Afterwards, I connected my cluster to Studio 3T and imported my dataset. From within Studio 3T, I modified the field names to camelcase for better readability, used an aggregation pipeline to derive arrestYear, arrestMonth, and arrestDay columns from the arrestDate column via an addFields statement, and combined them into the dataset via a merge statement.
 
 Next, I created a Federated Database Instance in MongoDB Atlas to connect my database to Tableau through a VirtualCollection (also known as a VirtualDatabase). This was accomplished by downloading the MongoDB JDBC Driver and Tableau Connector, and using my Federated Database Instance Connection Information to sign in from within Tableau Desktop.
 
